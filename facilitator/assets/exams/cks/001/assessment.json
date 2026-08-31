@@ -64,7 +64,7 @@
       "id": "3",
       "namespace": "api-security",
       "machineHostname": "ckad9999",
-      "question": "Enhance the security of the Kubernetes API server by configuring a Pod Security Policy (PSP) or Pod Security Standard (PSS):\n\n1. Create a namespace named `api-security`\n\n2. Apply a label to the namespace to enforce the `baseline` Pod Security Standard: `pod-security.kubernetes.io/enforce=baseline`\n\n3. Create a pod named `secure-pod` using the `nginx` image that complies with the baseline Pod Security Standard.\n\n4. Create a Role and RoleBinding that allow a ServiceAccount named `pss-viewer` (which has already been created) to view the pod security standards applied to namespaces.",
+      "question": "Enhance the security of the Kubernetes API server by configuring a Pod Security Policy (PSP) or Pod Security Standard (PSS):\n\n1. Create a namespace named `api-security`\n\n2. Apply a label to the namespace to enforce the `baseline` Pod Security Standard: `pod-security.kubernetes.io/enforce=baseline`\n\n3. Create a pod named `secure-pod` using the `nginx` image that complies with the baseline Pod Security Standard.\n\n4. Create a Role named `pss-viewer-role` and RoleBinding named `pss-viewer-binding` that allow a ServiceAccount named `pss-viewer` (which has already been created) to view the pod security standards applied to namespaces.",
       "concepts": ["api security", "pod security standards", "rbac"],
       "verification": [
         {
