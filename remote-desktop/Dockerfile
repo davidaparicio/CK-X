@@ -73,10 +73,15 @@ COPY config/vscodium-settings.json /headless/.vscodium-data/User/settings.json
 COPY config/vscodium-settings.json /home/candidate/.vscodium-data/User/settings.json
 RUN chown -R candidate:candidate /home/candidate/.vscodium-data
 
-#panel docked to the top of the screen, with window buttons (task switcher)
+#panel docked to the top of the screen, with window buttons (task switcher),
+#plus a dock at the bottom
 COPY config/xfce4-panel.xml /headless/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
 COPY config/launcher-2/vscodium.desktop /headless/.config/xfce4/panel/launcher-2/vscodium.desktop
 COPY config/launcher-3/terminal.desktop /headless/.config/xfce4/panel/launcher-3/terminal.desktop
+COPY config/launcher-8/thunar.desktop /headless/.config/xfce4/panel/launcher-8/thunar.desktop
+COPY config/launcher-9/terminal.desktop /headless/.config/xfce4/panel/launcher-9/terminal.desktop
+COPY config/launcher-10/firefox.desktop /headless/.config/xfce4/panel/launcher-10/firefox.desktop
+COPY config/launcher-11/vscodium.desktop /headless/.config/xfce4/panel/launcher-11/vscodium.desktop
 
 # Copy startup script
 COPY startup.sh /usr/local/bin/startup.sh
