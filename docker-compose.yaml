@@ -2,6 +2,7 @@ services:
   # VNC Server (Ubuntu)
   remote-desktop:
     image: nishanb/ck-x-simulator-remote-desktop:latest
+    platform: linux/amd64
     build:
       context: ./remote-desktop
     hostname: terminal
