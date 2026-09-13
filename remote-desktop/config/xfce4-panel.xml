@@ -17,8 +17,6 @@
         <value type="int" value="3"/>
         <value type="int" value="4"/>
         <value type="int" value="5"/>
-        <value type="int" value="6"/>
-        <value type="int" value="7"/>
       </property>
       <property name="disable-struts" type="bool" value="false"/>
     </property>
@@ -43,22 +41,11 @@
   </property>
   <property name="plugins" type="empty">
     <property name="plugin-1" type="string" value="applicationsmenu"/>
-    <!-- Quick launchers: VSCodium and Terminal -->
-    <property name="plugin-2" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="vscodium.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-3" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="terminal.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-4" type="string" value="separator">
+    <property name="plugin-2" type="string" value="separator">
       <property name="style" type="uint" value="1"/>
     </property>
     <!-- Window buttons (task switcher) -->
-    <property name="plugin-5" type="string" value="tasklist">
+    <property name="plugin-3" type="string" value="tasklist">
       <property name="grouping" type="uint" value="0"/>
       <property name="show-labels" type="bool" value="true"/>
       <property name="flat-buttons" type="bool" value="false"/>
@@ -66,10 +53,10 @@
       <property name="include-all-workspaces" type="bool" value="true"/>
       <property name="window-scrolling" type="bool" value="false"/>
     </property>
-    <property name="plugin-6" type="string" value="showdesktop"/>
+    <property name="plugin-4" type="string" value="showdesktop"/>
     <!-- no systray plugin: the VNC session starts two panel instances and
          only one of them can own the notification area selection -->
-    <property name="plugin-7" type="string" value="clock">
+    <property name="plugin-5" type="string" value="clock">
       <property name="mode" type="uint" value="2"/>
       <property name="digital-format" type="string" value="%H:%M"/>
     </property>
