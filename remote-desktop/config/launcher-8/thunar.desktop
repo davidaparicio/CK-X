@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=File Explorer
+Comment=Browse the file system
+Exec=thunar %F
+Icon=Thunar
+Terminal=false
+StartupNotify=true

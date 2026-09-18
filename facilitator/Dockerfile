@@ -11,7 +11,8 @@ RUN apk add --no-cache openssh-client
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production
+# package-lock.json is not tracked in this repo, so `npm ci` cannot be used here
+RUN npm install --omit=dev
 
 # Bundle app source
 COPY . .

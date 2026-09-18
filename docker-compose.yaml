@@ -2,6 +2,7 @@ services:
   # VNC Server (Ubuntu)
   remote-desktop:
     image: nishanb/ck-x-simulator-remote-desktop:latest
+    platform: linux/amd64
     build:
       context: ./remote-desktop
     hostname: terminal
@@ -22,7 +23,7 @@ services:
       resources:
         limits:
           cpus: "1"
-          memory: 1G
+          memory: 2G # VSCodium (Electron) needs the extra headroom
         reservations:
           cpus: "0.5"
           memory: 512M

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Terminal
+Comment=Open a terminal
+Exec=bash
+Icon=utilities-terminal
+Terminal=true
+StartupNotify=false
